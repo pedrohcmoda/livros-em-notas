@@ -23,7 +23,6 @@ public class ComentariosController {
     @Autowired
     private LivroRepository livroRepository;
 
-
     @CrossOrigin(origins = "*")
     @PostMapping("/{livroId}")
     public ResponseEntity<Object> createComentario(@PathVariable (value="livroId") UUID livroId, @RequestBody ComentarioModel comentario) {
