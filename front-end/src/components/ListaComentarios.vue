@@ -19,8 +19,7 @@ export default {
   },
   methods: {
     async excluirComentario(comentarioId) {
-      await axios.delete(`http://localhost:8080/comentario/${comentarioId}`).catch((e) => {
-            //notificacao
+      await axios.delete(`http://localhost:8080/comentario/${comentarioId}`).catch(() => {
       })
       this.$emit('comentarioDeletado', comentarioId)
     },
@@ -51,7 +50,7 @@ export default {
   color: #f00;
   padding: 5px 10px;
   border-radius: 5px;
-  margin: 0 5px 0px auto
+  margin: 0 5px 0 auto
 }
 
 .lista-comentarios button:hover {

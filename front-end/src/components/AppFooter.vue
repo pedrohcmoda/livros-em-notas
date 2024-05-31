@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>&copy; Copyright 2024 Pedro Henrique Cunha Moda</p>
+        <p>Pedro Henrique Cunha Moda 2024</p>
     </footer>
 </template>
 
